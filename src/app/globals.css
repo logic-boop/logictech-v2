@@ -1,26 +1,71 @@
 @import "tailwindcss";
 
+@theme {
+  /* LOGICTECH Brand Palette */
+  --color-brand-crimson: #dc2626;
+  --color-brand-obsidian: #0f172a;
+  --color-brand-obsidian-light: #1e293b;
+}
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  /* Deep Obsidian Background */
+  --background: #050505;
+  --foreground: #ffffff;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  color-scheme: dark;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* LOGO FIDELITY ENGINE */
+/* This ensures the logo stays sharp and bold on large scaling */
+.logo-rendering {
+  image-rendering: -webkit-optimize-contrast; /* Sharpest possible edges */
+  image-rendering: crisp-edges;
+  filter: saturate(1.1) contrast(1.1);
+  will-change: transform;
+}
+
+/* Crimson Selection */
+::selection {
+  background-color: #dc2626;
+  color: #ffffff;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #050505;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #dc2626;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ff0000;
+}
+/* ... your existing theme variables ... */
+
+.logo-rendering {
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+  filter: contrast(1.1) brightness(1.1);
+  /* Added to prevent blurred subpixels during transition */
+  backface-visibility: hidden;
+  transform: translateZ(0);
+}
+
+/* Ensure the font smoothing doesn't thin out your bold text */
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
