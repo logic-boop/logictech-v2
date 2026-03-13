@@ -26,13 +26,13 @@ export default function ServicesPage() {
             title: "AI Automation",
             desc: "We build smart tools that think for you. We automate your boring, repetitive tasks using AI so you can save hours of work every single day.",
             features: ["Smart Workflow Triggers", "Neural Core Logic", "Auto-Responding Systems", "Data Processing"],
-            img: "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=2070"
+            img: "ai-automation.avif"
         },
         {
             title: "3D & Brand Design",
             desc: "We create identities that people remember. High-end 3D logos, social media graphics, and full brand books that make you look like a pro.",
             features: ["3D Logo Design", "Visual Architecture", "Social Media Kits", "Brand Strategy"],
-            img: "https://images.unsplash.com/photo-1614850523296-d8c1af93d400?q=80&w=2070"
+            img: "3Danimation.avif"
         }
     ];
 
