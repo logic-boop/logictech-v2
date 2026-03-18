@@ -18,22 +18,21 @@ export default function ContactPage() {
         <main className={`transition-opacity duration-1000 ${isLoaded ? 'opacity-100' : 'opacity-0'} bg-[#050505] w-full overflow-x-hidden`}>
 
             {/* 1. HERO - INDUSTRIAL HEADER */}
-            <section className="relative pt-40 md:pt-64 pb-20 md:pb-32 px-6 overflow-hidden border-b border-white/5">
+            <section className="relative pt-64 md:pt-80 pb-20 md:pb-32 px-6 overflow-hidden border-b border-white/5">
                 <div className="max-w-7xl mx-auto relative z-10">
                     <div className="flex items-center gap-4 mb-8 reveal reveal-up">
                         <div className="w-12 h-[1px] bg-[#dc2626]"></div>
                         <h4 className="text-[#dc2626] font-black uppercase tracking-[0.5em] text-[10px]">Communication Protocol</h4>
                     </div>
-                    {/* Added responsive text sizes and break-words to prevent overflow */}
-                    <h1 className="reveal reveal-up delay-100 text-5xl sm:text-7xl md:text-[10rem] font-black text-white uppercase tracking-tighter leading-[0.9] md:leading-[0.8] mb-12 break-words">
+                    <h1 className="reveal reveal-up delay-100 text-5xl sm:text-7xl md:text-[9rem] lg:text-[10rem] font-black text-white uppercase tracking-tighter leading-[0.9] md:leading-[0.8] mb-12 break-words">
                         Order our <br /> <span className="text-transparent" style={{ WebkitTextStroke: '1px rgba(255,255,255,0.3)' }}>Services</span>
                     </h1>
                 </div>
-                <div className="absolute inset-0 opacity-20" style={{ backgroundImage: 'radial-gradient(circle, #333 1px, transparent 1px)', backgroundSize: '40px 40px' }}></div>
+                <div className="absolute inset-0 opacity-10" style={{ backgroundImage: 'radial-gradient(circle, #fff 1px, transparent 1px)', backgroundSize: '40px 40px' }}></div>
             </section>
 
             {/* 2. CONTACT FORM & INFO - CLEAN WHITE SECTION */}
-            <section className="py-20 md:py-32 px-6 bg-white rounded-t-[3rem] md:rounded-t-[4rem]">
+            <section className="py-20 md:py-32 px-4 md:px-6 bg-white rounded-t-[3rem] md:rounded-t-[4rem]">
                 <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 md:gap-24">
 
                     {/* LEFT SIDE: INITIATION FORM */}
@@ -43,7 +42,7 @@ export default function ContactPage() {
                             <p className="text-gray-400 font-medium italic text-sm md:text-base">"Define your project or request our specialized services."</p>
                         </div>
 
-                        <form className="space-y-8">
+                        <form className="space-y-8 md:space-y-10">
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                                 <div className="space-y-2">
                                     <label className="text-[10px] font-black uppercase tracking-widest text-[#dc2626]">Full Name</label>
@@ -57,14 +56,17 @@ export default function ContactPage() {
 
                             <div className="space-y-2">
                                 <label className="text-[10px] font-black uppercase tracking-widest text-[#dc2626]">Request Category</label>
-                                <select className="w-full bg-transparent border-b-2 border-gray-200 focus:border-[#dc2626] outline-none py-4 transition-all font-bold text-[#0f172a] appearance-none cursor-pointer">
-                                    <option>Website/Mobile App</option>
-                                    <option>Hardware (Laptops/Desktops)</option>
-                                    <option>AI Automation Integration</option>
-                                    <option>3D & Logo Design</option>
-                                    <option>Branding</option>
-                                    <option>General Support / Other</option>
-                                </select>
+                                <div className="relative">
+                                    <select className="w-full bg-transparent border-b-2 border-gray-200 focus:border-[#dc2626] outline-none py-4 transition-all font-bold text-[#0f172a] appearance-none cursor-pointer">
+                                        <option>Website/Mobile App</option>
+                                        <option>Hardware (Laptops/Desktops)</option>
+                                        <option>AI Automation Integration</option>
+                                        <option>3D & Logo Design</option>
+                                        <option>Branding</option>
+                                        <option>General Support / Other</option>
+                                    </select>
+                                    <div className="absolute right-0 bottom-4 pointer-events-none text-gray-300 text-xs">▼</div>
+                                </div>
                             </div>
 
                             <div className="space-y-2">
@@ -72,7 +74,7 @@ export default function ContactPage() {
                                 <textarea rows={4} placeholder="How can LogicTech accelerate your brand?" className="w-full bg-transparent border-b-2 border-gray-200 focus:border-[#dc2626] outline-none py-4 transition-all font-bold text-[#0f172a] resize-none placeholder:text-gray-300"></textarea>
                             </div>
 
-                            <button className="w-full md:w-auto bg-[#0f172a] text-white px-16 py-6 rounded-full font-black uppercase tracking-[0.3em] text-[10px] hover:bg-[#dc2626] transition-all shadow-xl hover:scale-105 active:scale-95">
+                            <button className="w-full md:w-auto bg-[#0f172a] text-white px-12 md:px-16 py-5 md:py-6 rounded-full font-black uppercase tracking-[0.3em] text-[10px] hover:bg-[#dc2626] transition-all shadow-xl hover:scale-105 active:scale-95">
                                 Send Protocol →
                             </button>
                         </form>
@@ -80,50 +82,50 @@ export default function ContactPage() {
 
                     {/* RIGHT SIDE: TECHNICAL SPECS & LOCATIONS */}
                     <div className="reveal reveal-right space-y-12 md:space-y-16">
-                        <div className="bg-[#050505] p-8 md:p-12 rounded-[2.5rem] md:rounded-[3.5rem] text-white space-y-12">
+                        <div className="bg-[#050505] p-8 md:p-12 rounded-[2.5rem] md:rounded-[3.5rem] text-white space-y-10 md:space-y-12">
                             <div className="space-y-4">
                                 <h4 className="text-[#dc2626] font-black uppercase tracking-[0.4em] text-[10px]">Headquarters</h4>
-                                <p className="text-2xl md:text-3xl font-black uppercase tracking-tighter">Ibadan, Nigeria</p>
+                                <p className="text-2xl md:text-3xl font-black uppercase tracking-tighter leading-tight">Ibadan, <br className="md:hidden" /> Nigeria</p>
                                 <p className="text-white/40 font-medium italic text-sm">Operating at Global Standard.</p>
                             </div>
 
                             <div className="space-y-4">
                                 <h4 className="text-[#dc2626] font-black uppercase tracking-[0.4em] text-[10px]">Technical Support</h4>
-                                <p className="text-lg md:text-xl font-bold break-all">logictech2026@gmail.com</p>
-                                <p className="text-lg md:text-xl font-bold">+234 706 315 3233</p>
+                                <p className="text-base md:text-xl font-bold break-all">logictech2026@gmail.com</p>
+                                <p className="text-base md:text-xl font-bold">+234 706 315 3233</p>
                             </div>
 
                             <div className="pt-8 border-t border-white/10 flex flex-wrap gap-6">
-                                <a href="https://www.linkedin.com/in/afolabi-olubode-710803187/" className="text-white/40 hover:text-[#dc2626] transition-colors font-black text-[10px] uppercase tracking-widest">LinkedIn</a>
-                                <a href="https://github.com/logic-boop" className="text-white/40 hover:text-[#dc2626] transition-colors font-black text-[10px] uppercase tracking-widest">GitHub</a>
-                                <a href="https://x.com/O87807Olubode" className="text-white/40 hover:text-[#dc2626] transition-colors font-black text-[10px] uppercase tracking-widest">X</a>
+                                <a href="https://www.linkedin.com/in/afolabi-olubode-710803187/" target="_blank" rel="noopener noreferrer" className="text-white/40 hover:text-[#dc2626] transition-colors font-black text-[9px] md:text-[10px] uppercase tracking-widest">LinkedIn</a>
+                                <a href="https://github.com/logic-boop" target="_blank" rel="noopener noreferrer" className="text-white/40 hover:text-[#dc2626] transition-colors font-black text-[9px] md:text-[10px] uppercase tracking-widest">GitHub</a>
+                                <a href="https://x.com/O87807Olubode" target="_blank" rel="noopener noreferrer" className="text-white/40 hover:text-[#dc2626] transition-colors font-black text-[9px] md:text-[10px] uppercase tracking-widest">X</a>
                             </div>
                         </div>
 
-                        {/* Image aspect-ratio fix for mobile */}
-                        <div className="relative aspect-[16/9] md:aspect-video rounded-[2rem] md:rounded-[3rem] overflow-hidden shadow-2xl border border-black/5">
+                        <div className="relative aspect-[16/9] md:aspect-video rounded-[2rem] md:rounded-[3rem] overflow-hidden shadow-2xl border border-black/5 group">
                             <img
                                 src="https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=2069"
-                                className="w-full h-full object-cover"
+                                className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-[2s]"
                                 alt="LogicTech Studio"
                             />
+                            <div className="absolute inset-0 bg-black/10"></div>
                         </div>
                     </div>
                 </div>
             </section>
 
             {/* 3. FINAL FOOTER SECTION */}
-            <section className="py-20 md:py-32 px-6 text-center text-white/20">
-                <p className="font-black uppercase tracking-[1em] text-[8px] md:text-[10px]">LogicTech Design & AI © 2026</p>
-            </section>
+            <footer className="py-20 md:py-32 px-6 text-center text-white/20">
+                <p className="font-black uppercase tracking-[0.8em] md:tracking-[1em] text-[8px] md:text-[10px]">LogicTech Design & AI © 2026</p>
+            </footer>
 
             <style jsx>{`
-                .reveal { opacity: 0; transform: translateY(30px); transition: all 1.2s cubic-bezier(0.16, 1, 0.3, 1); }
+                .reveal { opacity: 0; transition: all 1.2s cubic-bezier(0.16, 1, 0.3, 1); }
                 .reveal-visible { opacity: 1; transform: translate(0); }
                 .reveal-up { transform: translateY(30px); }
                 .reveal-left { transform: translateX(-40px); }
                 .reveal-right { transform: translateX(40px); }
-                @media (max-width: 768px) {
+                @media (max-width: 1024px) {
                     .reveal-left, .reveal-right { transform: translateY(30px); }
                 }
             `}</style>
