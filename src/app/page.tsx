@@ -173,7 +173,7 @@ export default function HomePage() {
       {/* 6. BRAND STRATEGY */}
       <section className="py-24 md:py-32 px-6 bg-white">
         <div className="max-w-7xl mx-auto flex flex-col items-center text-center">
-          <h2 className="reveal reveal-up text-5xl md:text-8xl font-black text-[#0f172a] uppercase tracking-tighter mb-8 md:mb-12">Growth <span className="text-gray-300 italic">Strategy</span></h2>
+          <h2 className="reveal reveal-up text-5xl md:text-8xl font-black text-[#0f172a] uppercase tracking-tighter mb-8 md:mb-12">Growth <span className="text-gray-400 italic">Strategy</span></h2>
           <div className="reveal reveal-up delay-100 max-w-5xl rounded-[2rem] md:rounded-[4rem] overflow-hidden shadow-2xl mb-12 md:mb-16">
             <img src="growth4.jpg" className="w-full h-full object-cover" alt="Strategy" />
           </div>

@@ -44,7 +44,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             {/* BRAND CONTAINER */}
             <div className="flex items-center shrink-0 relative z-[110]">
               <Link href="/" className="flex items-center group">
-                <div className="flex items-center gap-0 leading-none">
+                <div className="flex items-center gap-2 leading-none">
                   <div className="relative w-20 h-20 sm:w-24 sm:h-24 xl:w-32 xl:h-32 flex items-center justify-center transition-all duration-700 group-hover:scale-105">
                     <Image
                       src="/logo.png"
