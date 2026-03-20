@@ -1,36 +1,32 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# ⚡ LogicTech | Industrial Digital Infrastructure & Hardware Lab
 
-## Getting Started
+![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
+![Three.js](https://img.shields.io/badge/Three.js-000000?style=for-the-badge&logo=threedotjs&logoColor=white)
 
-First, run the development server:
+**LogicTech** is a high-performance ecosystem engineered for the 2026 technical landscape. It operates as a dual-gate platform: an elite **System Architecture Firm** and a **Premium Enterprise Hardware Hub.**
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🕹️ Operational Divisions
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+* **Division 01: System Architecture** – Bespoke Next.js, React Native, and Three.js deployments for high-scale enterprise environments.
+* **Division 02: Agentic Orchestration** – Neural core logic, multi-agent swarms, and autonomous workflow triggers.
+* **Division 03: Hardware Inventory** – Strategic procurement of enterprise-grade workstations (MacBook Pro, EliteBook, ThinkPad) optimized for dev-ops.
+* **Industrial UI/UX** – High-contrast "State-Transition" themes utilizing a signature `#dc2626` (Logic Red) accent.
+* **Performance Protocol** – Engineered for sub-second edge-node delivery and zero-layout shift.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🚀 Technical Stack
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **Core Framework:** Next.js 15 (App Router / Server Components)
+- **Styling Engine:** Tailwind CSS (Industrial Design Tokens)
+- **Visual Logic:** Three.js (3D Geometry) & Framer Motion (State Transitions)
+- **Edge Deployment:** Vercel Global Edge Network
 
-## Learn More
+## 📂 System Architecture (Directory)
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```text
+├── app/               # Next.js App Router (Logic, Works, Lab, Shop)
+├── components/        # Atomic Industrial UI / Neural Interface Components
+├── lib/               # Core business logic & API orchestration
+├── public/            # High-fidelity 3D assets & brand identity primitives
+└── styles/            # Global design tokens and motion-reveal protocols
