@@ -154,10 +154,26 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             <div className="flex flex-col items-center md:items-start space-y-6 text-center md:text-left">
               <h4 className="text-[#dc2626] font-black uppercase text-[10px] tracking-[0.5em]">Social Hub</h4>
               <div className="flex flex-wrap justify-center md:justify-start gap-3">
-                {['Instagram', 'LinkedIn', 'Tiktok'].map(p => (
-                  <div key={p} className="px-5 py-2.5 bg-white/5 rounded-full border border-white/10 hover:bg-[#dc2626] hover:border-[#dc2626] transition-all duration-300 cursor-pointer group">
-                    <span className="font-black text-[9px] uppercase tracking-[0.2em] group-hover:text-white">{p}</span>
-                  </div>
+                {[
+                  { name: 'WhatsApp', href: 'https://wa.me/message/B4RHGBASNY5RH1' },
+                  { name: 'LinkedIn', href: 'https://www.linkedin.com/in/afolabi-olubode-710803187/' },
+                  { name: 'GitHub', href: 'https://github.com/logic-boop' },
+                  { name: 'Discord', href: 'https://discord.com/channels/@me' },
+                  { name: 'TikTok', href: 'https://www.tiktok.com/@logictechdesign' },
+                  { name: 'Twitter', href: 'https://x.com/O87807Olubode' },
+                  { name: 'Upwork', href: 'https://www.upwork.com/freelancers/~0180715041bdb02b94' }
+                ].map((social) => (
+                  <Link
+                    key={social.name}
+                    href={social.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="px-5 py-2.5 bg-white/5 rounded-full border border-white/10 hover:bg-[#dc2626] hover:border-[#dc2626] transition-all duration-300 cursor-pointer group"
+                  >
+                    <span className="font-black text-[9px] uppercase tracking-[0.2em] group-hover:text-white">
+                      {social.name}
+                    </span>
+                  </Link>
                 ))}
               </div>
             </div>
