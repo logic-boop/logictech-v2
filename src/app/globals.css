@@ -7,6 +7,11 @@
   --color-brand-obsidian-light: #1e293b;
 }
 
+html,
+body {
+  overflow-x: hidden;
+}
+
 :root {
   /* Deep Obsidian Background */
   --background: #050505;
